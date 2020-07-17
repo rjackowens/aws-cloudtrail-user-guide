@@ -1,3 +1,4 @@
+
 # AWS CloudTrail Identity\-Based Policy Examples<a name="security_iam_id-based-policy-examples"></a>
 
 By default, IAM users and roles don't have permission to create or modify CloudTrail resources\. They also can't perform tasks using the AWS Management Console, AWS CLI, or AWS API\. An IAM administrator must create IAM policies that grant users and roles permission to perform specific API operations on the specified resources they need\. The administrator must then attach those policies to the IAM users, groups, or roles that require those permissions\.
@@ -524,10 +525,10 @@ You can view and configure delivery of events to CloudWatch Logs in the CloudTra
     "Statement": [{
         "Effect": "Allow",
         "Action": [
-            "iam:CreateRole"
-            "iam:PutRolePolicy"
-            "iam:ListRoles"
-            "iam:GetRolePolicy"
+            "iam:CreateRole",
+            "iam:PutRolePolicy",
+            "iam:ListRoles",
+            "iam:GetRolePolicy",
             "iam:GetUser"
         ],
         "Resource": "*"
